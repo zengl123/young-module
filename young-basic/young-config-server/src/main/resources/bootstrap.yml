@@ -1,0 +1,12 @@
+server:
+  port: 8200
+spring:
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zengl123/spring-cloud-config.git
+          search-paths: /young-config/young-eureka-server/**
+          username: zengl123
+          password: zeng@123

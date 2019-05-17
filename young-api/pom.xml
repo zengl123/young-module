@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>young-provider-uac-api</module>
+        <module>young-provider-sdk-api</module>
+        <module>young-provider-opc-api</module>
+        <module>young-provider-mdc-api</module>
+    </modules>
+
+    <parent>
+        <artifactId>young-module</artifactId>
+        <groupId>com.young</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>young-api</artifactId>
+    <packaging>pom</packaging>
+    <description>接口包</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.young</groupId>
+            <artifactId>young-common-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.young</groupId>
+            <artifactId>young-security-feign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

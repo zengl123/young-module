@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>young-common</artifactId>
+        <groupId>com.young</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>young-common-core</artifactId>
+    <description>微服务核心依赖包</description>
+
+    <properties>
+        <tk.mapper.version>3.4.0</tk.mapper.version>
+        <mybatis.version>3.5.1</mybatis.version>
+        <spring.tx.version>5.1.7.RELEASE</spring.tx.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>${tk.mapper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.tx.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.young</groupId>
+            <artifactId>young-common-base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.young</groupId>
+            <artifactId>young-common-zk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.young</groupId>
+            <artifactId>young-common-util</artifactId>
+        </dependency>
+    </dependencies>
+</project>
