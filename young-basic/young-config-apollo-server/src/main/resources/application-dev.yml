@@ -1,13 +1,12 @@
-spring:
-  application:
-    name: @artifactId@
-#eureka¿Í»§¶ËÅäÖÃ
+server:
+  port: 8200
+#eurekaå®¢æˆ·ç«¯é…ç½®
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://zengling:zengling@localhost:8100/eureka/
-#ÈÕÖ¾ÅäÖÃ
+#æ—¥å¿—é…ç½®
 logging:
   config: classpath:log4j2-dev.yml

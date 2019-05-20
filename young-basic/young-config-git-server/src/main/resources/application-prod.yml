@@ -1,0 +1,16 @@
+server:
+  port: 8200
+#eureka客户端配置
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://zengling:zengling@localhost:8100/eureka/
+#日志配置
+logging:
+  config: classpath:log4j2-prod.yml
+info:
+  软件著作权: 搭建企业级分布式微服务平台-prod
+  著作登记号:
+  关于我们:

@@ -1,5 +1,6 @@
 package com.young;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @UpdateRemark:
  * @Version:
  */
+
 @SpringBootApplication
 public class YoungConfigApolloServerApplication {
 

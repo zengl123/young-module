@@ -6,7 +6,7 @@
 
     <modules>
         <module>young-eureka-server</module>
-        <module>young-config-server</module>
+        <module>young-config-git-server</module>
         <module>young-gateway-server</module>
         <module>young-config-apollo-server</module>
     </modules>

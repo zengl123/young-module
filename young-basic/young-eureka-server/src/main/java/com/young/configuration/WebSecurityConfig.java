@@ -1,4 +1,4 @@
-package com.young;
+package com.young.configuration;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -10,16 +10,17 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  * @Description:
  * @Author:zengling
  * @钉钉:17363645521
- * @CreateDate:2019/5/16 11:22
+ * @CreateDate:2019/5/20 18:08
  * @UpdateUser:
- * @UpdateDate:2019/5/16 11:22
+ * @UpdateDate:2019/5/20 18:08
  * @UpdateRemark:
  * @Version:
  */
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
+        super.configure(http);
     }
 }
