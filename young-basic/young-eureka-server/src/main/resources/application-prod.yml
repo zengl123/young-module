@@ -1,9 +1,6 @@
 server:
   port: 8100
 spring:
-  profiles:
-    #开发环境配置
-    active: prod
   #eureka权限配置
   security:
     basic:

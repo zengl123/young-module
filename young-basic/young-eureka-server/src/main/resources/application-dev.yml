@@ -1,5 +1,13 @@
 server:
   port: 8100
+spring:
+  #eureka权限配置
+  security:
+    basic:
+      enabled: true
+    user:
+      name: zengling
+      password: zengling
 #eureka配置
 #集群register-with-eureka|fetch-registry 为true
 eureka:
@@ -9,7 +17,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
       #剔除失效服务间隔
       eviction-interval-timer-in-ms: 5000
     server:

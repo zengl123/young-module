@@ -6,8 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/zengl123/spring-cloud-config.git
-          search-paths: /*
-          basedir: /young-config/young-eureka-server/
+          search-paths: /**
           username: zengl123
           password: zeng@123
 

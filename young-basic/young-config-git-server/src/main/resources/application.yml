@@ -1,5 +1,12 @@
 spring:
   application:
-    name: @artifactId@
+    name: '@artifactId@'
   profiles:
-    include: dev
+    include: prod
+#eurekaøÕªß∂À≈‰÷√
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://zengling:zengling@localhost:8100/eureka/

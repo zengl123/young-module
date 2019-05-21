@@ -1,5 +1,5 @@
 server:
-  port: 8200
+  port: 9200
 #eureka客户端配置
 eureka:
   client:
@@ -10,3 +10,7 @@ eureka:
 #日志配置
 logging:
   config: classpath:log4j2-dev.yml
+app:
+  id: @artifactId@
+apollo:
+  meta: http://13.13.13.58:8080

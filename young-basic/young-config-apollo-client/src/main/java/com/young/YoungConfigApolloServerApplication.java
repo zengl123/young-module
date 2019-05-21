@@ -3,6 +3,8 @@ package com.young;
 import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
 
 /**
  *Copyright (C), 2018-${YEAR}, 湖南金峰信息科技有限公司
@@ -15,8 +17,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @UpdateRemark:
  * @Version:
  */
-
+@EnableApolloConfig
 @SpringBootApplication
+@EnableDiscoveryClient
 public class YoungConfigApolloServerApplication {
 
     public static void main(String[] args) {
