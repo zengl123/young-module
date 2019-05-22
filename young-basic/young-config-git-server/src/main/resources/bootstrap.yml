@@ -1,3 +1,20 @@
+#eureka客户端配置
+eureka:
+  client:
+    #需要将我的服务注册到eureka上
+    register-with-eureka: true
+    #需要检索服务
+    fetch-registry: true
+    #注册到eureka服务地址
+    service-url:
+      defaultZone: http://root:root@eurekaserver.com:8100/eureka/
+    registry-fetch-interval-seconds: 30
+  #心跳检测检测与续约时间
+  instance:
+    #测试时将值设置设置小些,保证服务关闭后注册中心能及时踢出服务
+    #lease-renewal-interval-in-seconds: 1
+    #服务端在收到最后一次心跳之后等待的时间上限,单位为秒，超过则剔除（客户端告诉服务端按照此规则等待自己）
+    #lease-expiration-duration-in-seconds: 2
 #git 配置中心
 spring:
   cloud:
@@ -6,7 +23,7 @@ spring:
       server:
         git:
           uri: https://github.com/zengl123/spring-cloud-config.git
-          search-paths: /**
           username: zengl123
           password: zeng@123
-
+          search-paths: young-config
+      profile:

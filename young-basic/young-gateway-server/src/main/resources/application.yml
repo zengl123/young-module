@@ -3,3 +3,10 @@ spring:
     name: @artifactId@
   profiles:
     include: dev
+#eurekaøÕªß∂À≈‰÷√
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:root@localhost:8100/eureka/
